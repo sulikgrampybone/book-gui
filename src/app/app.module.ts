@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BooksComponent } from './books/books.component';
 import { BookService } from "./services/book.service";
 import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
     BookService
